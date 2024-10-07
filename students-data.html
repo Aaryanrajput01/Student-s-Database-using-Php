@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./students-data.css" rel="stylesheet">
+    <title>Students Data Table</title>
+    <!-- Include the xlsx library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/jszip.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.js"></script>
+</head>
+<body>
+    <div class="header">
+        <h1>Students Data Table</h1>
+    </div>
+    <a href="login.html" class="logout">Logout</a>
+    <div class="filterField">
+        <!-- <label for="usnFilter">Filter by USN:</label> -->
+        <input type="text" id="usnFilter" placeholder="Enter USN">
+
+        <!-- <label for="nameFilter">Filter by Name:</label> -->
+        <input type="text" id="nameFilter" placeholder="Enter Name">
+    </div>
+
+    <table id="excelTable">
+        <thead>
+            <tr>
+                <th>USN</th>
+                <th>Name</th>
+                <th>Email Id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Table data will be inserted here -->
+        </tbody>
+    </table>
+
+    <!-- Include your external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

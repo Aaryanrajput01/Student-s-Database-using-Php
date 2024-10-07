@@ -1,0 +1,88 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(./images/login-background.jpg);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+.login {
+    border: 1px solid #111;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    width: 27rem;
+    height: 37rem;
+    overflow: hidden;
+}
+
+.form {
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+    background-image: url(./images/login-background.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+}
+
+h1 {
+    display: grid;
+    place-content: center;
+    margin-top: -5rem;
+    font-size: 2.5rem;
+    margin-bottom: 75px;
+    color: #905868;
+}
+
+input {
+    background: transparent;
+    width: 18rem;
+    height: 1.5rem;
+    font-size: 0.9rem;
+    border: 2px solid rgba(116, 116, 116, 0.2);
+    border-radius: 1rem;
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+::placeholder {
+    color: rgba(120, 116, 119);
+    padding: 4px;
+}
+
+label {
+    font-size: 1.3rem;
+    padding: 0.3rem;
+    color: #905868;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 2rem;
+    width: 19rem;
+    height: 2.4rem;
+    font-weight: bold;
+    border: 2px solid #905868;
+    border-radius: 1rem;
+    font-size: 1rem;
+    background-color: #905868;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 5x rgba(76, 76, 76, 0.75);
+}
+
+#forget-password {
+    cursor: pointer;
+    color: #905868;
+    font-weight: 700;
+}
+
+#forget-password:hover {
+    text-decoration: underline;
+}
